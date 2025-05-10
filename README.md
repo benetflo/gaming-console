@@ -20,10 +20,10 @@ graph TD;
     subgraph Column 1
         GPIO0("GPIO 0"):::textBlack
         GPIO1("GPIO 1"):::textBlack
-        GPIO2("GPIO 2 - GREEN BUTTON"):::green, textBlack
-        GPIO3("GPIO 3 - BLUE BUTTON"):::blue, textBlack
-        GPIO4("GPIO 4 - RED BUTTON"):::red, textBlack
-        GPIO5("GPIO 5 - YELLOW BUTTON"):::yellow, textBlack
+        GPIO2("GPIO 2 - GREEN BUTTON"):::greenText
+        GPIO3("GPIO 3 - BLUE BUTTON"):::blueText
+        GPIO4("GPIO 4 - RED BUTTON"):::redText
+        GPIO5("GPIO 5 - YELLOW BUTTON"):::yellowText
         GPIO6("GPIO 6"):::textBlack
         GPIO7("GPIO 7"):::textBlack
         GPIO8("GPIO 8"):::textBlack
@@ -52,10 +52,10 @@ graph TD;
     GPIO0-->GPIO1-->GPIO2-->GPIO3-->GPIO4-->GPIO5-->GPIO6-->GPIO7-->GPIO8-->GPIO9-->GPIO10-->GPIO11
     GPIO12-->GPIO13-->GPIO14-->GPIO15-->GPIO16-->GPIO17-->GPIO18-->GPIO19-->GPIO20-->GPIO21-->GPIO22-->GPIO23-->GPIO24-->GPIO25
 
-    classDef green fill:#00FF00, color:#000000;
-    classDef blue fill:#0000FF, color:#000000;
-    classDef red fill:#FF0000, color:#000000;
-    classDef yellow fill:#FFFF00, color:#000000;
+    classDef greenText fill:#00FF00, color:#000000;
+    classDef blueText fill:#0000FF, color:#000000;
+    classDef redText fill:#FF0000, color:#000000;
+    classDef yellowText fill:#FFFF00, color:#000000;
     classDef textBlack color:#000000;
 
 
