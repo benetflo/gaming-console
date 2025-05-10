@@ -26,13 +26,13 @@ graph LR
         GPIO3["GPIO 3 - BLUE BUTTON"]:::green 
         GPIO4["GPIO 4 - RED BUTTON"]:::green 
         GPIO5["GPIO 5 - YELLOW BUTTON"]:::green 
-        GPIO6["GPIO 6"]
-        GPIO7["GPIO 7"]
-        GPIO8["GPIO 8"]
-        GPIO9["GPIO 9"]
-        GPIO10["GPIO 10"]
-        GPIO11["GPIO 11"]
-        GPIO12["GPIO 12"]
+        GND5["GND"]
+        GPIO6["GPIO 6"]:::green 
+        GPIO7["GPIO 7"]:::green 
+        GPIO8["GPIO 8"]:::green 
+        GPIO9["GPIO 9"]:::green 
+        GND6["GND"]
+        GPIO10["GPIO 10"]:::green
     end
 
     %% Mittkolumn med USB och pads
@@ -80,13 +80,13 @@ graph LR
     GPIO3 --- PAD4
     GPIO4 --- PAD5
     GPIO5 --- PAD6
-    GPIO6 --- PAD7
-    GPIO7 --- PAD8
-    GPIO8 --- PAD9
-    GPIO9 --- PAD10
-    GPIO10 --- PAD11
-    GPIO11 --- PAD12
-    GPIO12 --- PAD13
+    GND5 --- PAD7
+    GPIO6 --- PAD8
+    GPIO7 --- PAD9
+    GPIO8 --- PAD10
+    GPIO9 --- PAD11
+    GND6 --- PAD12
+    GPIO10 --- PAD13
 
     PAD0 --- VBUS
     PAD1 --- VSYS
