@@ -59,17 +59,17 @@ graph LR
         VBUS["VBUS"]:::red 
         VSYS["VSYS"]:::red 
         GND2["GND"]
-        EN["EN"]
+        EN["EN"]:::pink 
         3V3["3V3"]:::red 
-        GPIO17["GPIO 17"]
-        GPIO18["GPIO 18"]
-        GPIO19["GPIO 19"]
-        GPIO20["GPIO 20"]
+        ADC_VREF["ADC_VREF"]
+        GPIO28["GPIO 28"]:::green 
+        GND3["GND"]
+        GPIO27["GPIO 27"]:::green 
+        GPIO26["GPIO 26"]:::green 
+        RUN["RUN"]:::pink 
+        GPIO22["GPIO 22"]:::green 
+        GND4["GND"]
         GPIO21["GPIO 21"]
-        GPIO22["GPIO 22"]
-        GPIO23["GPIO 23"]
-        GPIO24["GPIO 24"]
-        GPIO25["GPIO 25"]
     end
 
     %% Kopplingar till mitten
@@ -93,15 +93,15 @@ graph LR
     PAD2 --- GND2
     PAD3 --- EN
     PAD4 --- 3V3
-    PAD5 --- GPIO17
-    PAD6 --- GPIO18
-    PAD7 --- GPIO19
-    PAD8 --- GPIO20
-    PAD9 --- GPIO21
-    PAD10 --- GPIO22
-    PAD11 --- GPIO23
-    PAD12 --- GPIO24
-    PAD13 --- GPIO25
+    PAD5 --- ADC_VREF
+    PAD6 --- GPIO28
+    PAD7 --- GND3
+    PAD8 --- GPIO27
+    PAD9 --- GPIO26
+    PAD10 --- RUN
+    PAD11 --- GPIO22
+    PAD12 --- GND4
+    PAD13 --- GPIO21
 
     %% Klassdefinitioner
     classDef green fill:#8BC34A,stroke:#000,color:#000;
@@ -109,6 +109,7 @@ graph LR
     classDef red fill:#F44336,stroke:#000,color:#000;
     classDef yellow fill:#FFEB3B,stroke:#000,color:#000;
     classDef usb fill:#B0BEC5,stroke:#000,color:#000;
+    classDef pink fill:#E91E63,stroke:#000,color:#FFF;
 
 
 
