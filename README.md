@@ -1,5 +1,6 @@
 # gaming-console
 
+```mermaid
 graph TD
     Pico[Raspberry Pi Pico]
     Pico -->|GPIO 15| RedButton[Röd knapp]
