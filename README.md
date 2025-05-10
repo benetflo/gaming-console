@@ -33,6 +33,12 @@ graph LR
         GPIO9["GPIO 9"]:::green 
         GND6["GND"]
         GPIO10["GPIO 10"]:::green
+        GPIO11["GPIO 11"]:::green 
+        GPIO12["GPIO 12"]:::green 
+        GPIO13["GPIO 13"]:::green
+        GND7[GND]
+        GPIO14["GPIO 14"]:::green
+        GPIO15["GPIO 15"]:::green 
     end
 
     %% Mittkolumn med USB och pads
@@ -52,6 +58,13 @@ graph LR
         PAD11[" "]
         PAD12[" "]
         PAD13[" "]
+        PAD14[" "]
+        PAD15[" "]
+        PAD16[" "]
+        PAD17[" "]
+        PAD18[" "]
+        PAD19[" "]
+        
     end
 
     %% Högersida
@@ -69,7 +82,13 @@ graph LR
         RUN["RUN"]:::pink 
         GPIO22["GPIO 22"]:::green 
         GND4["GND"]
-        GPIO21["GPIO 21"]
+        GPIO21["GPIO 21"]:::green
+        GPIO20["GPIO 20"]:::green 
+        GPIO19["GPIO 19"]:::green 
+        GPIO18["GPIO 18"]:::green 
+        GND8["GND"]
+        GPIO17["GPIO 17"]:::green 
+        GPIO16["GPIO 16"]:::green 
     end
 
     %% Kopplingar till mitten
@@ -87,6 +106,12 @@ graph LR
     GPIO9 --- PAD11
     GND6 --- PAD12
     GPIO10 --- PAD13
+    GPIO11 --- PAD14
+    GPIO12 --- PAD15
+    GPIO13 --- PAD16
+    GND7 --- PAD17
+    GPIO14 --- PAD18
+    GPIO15 --- PAD19
 
     PAD0 --- VBUS
     PAD1 --- VSYS
@@ -102,6 +127,12 @@ graph LR
     PAD11 --- GPIO22
     PAD12 --- GND4
     PAD13 --- GPIO21
+    PAD14 --- GPIO20
+    PAD15 --- GPIO19
+    PAD16 --- GPIO18
+    PAD17 --- GND8
+    PAD18 --- GPIO17
+    PAD19 --- GPIO16
 
     %% Klassdefinitioner
     classDef green fill:#8BC34A,stroke:#000,color:#000;
