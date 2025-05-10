@@ -56,5 +56,5 @@ graph TD;
     classDef blue fill:#0000FF;
     classDef red fill:#FF0000;
     classDef yellow fill:#FFFF00;
-    classDef textBlack fill:#FFFFFF, color:#000000;
+    classDef textBlack color:#000000;
 
