@@ -25,7 +25,7 @@ graph LR
         GPIO2["GPIO 2 - GREEN BUTTON"]:::green
         GPIO3["GPIO 3 - BLUE BUTTON"]:::green 
         GPIO4["GPIO 4 - RED BUTTON"]:::green 
-        GPIO5["GPIO 5 - YELLOW BUTTON"]::green 
+        GPIO5["GPIO 5 - YELLOW BUTTON"]:::green 
         GPIO6["GPIO 6"]
         GPIO7["GPIO 7"]
         GPIO8["GPIO 8"]
