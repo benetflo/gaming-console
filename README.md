@@ -51,12 +51,14 @@ graph LR
         PAD10[" "]
         PAD11[" "]
         PAD12[" "]
+        PAD13[" "]
     end
 
     %% Högersida
     subgraph R [ ]
         GPIO13["GPIO 13"]
         GPIO14["GPIO 14"]
+        GND["GND"]
         GPIO15["GPIO 15"]
         GPIO16["GPIO 16"]
         GPIO17["GPIO 17"]
@@ -73,31 +75,32 @@ graph LR
     %% Kopplingar till mitten
     GPIO0 --- PAD0
     GPIO1 --- PAD1
-    GPIO2 --- PAD2
-    GPIO3 --- PAD3
-    GPIO4 --- PAD4
-    GPIO5 --- PAD5
-    GPIO6 --- PAD6
-    GPIO7 --- PAD7
-    GPIO8 --- PAD8
-    GPIO9 --- PAD9
-    GPIO10 --- PAD10
-    GPIO11 --- PAD11
-    GPIO12 --- PAD12
+    GND --- PAD 2
+    GPIO2 --- PAD3
+    GPIO3 --- PAD4
+    GPIO4 --- PAD5
+    GPIO5 --- PAD6
+    GPIO6 --- PAD7
+    GPIO7 --- PAD8
+    GPIO8 --- PAD9
+    GPIO9 --- PAD10
+    GPIO10 --- PAD11
+    GPIO11 --- PAD12
+    GPIO12 --- PAD13
 
     PAD0 --- GPIO13
     PAD1 --- GPIO14
-    PAD2 --- GPIO15
-    PAD3 --- GPIO16
-    PAD4 --- GPIO17
-    PAD5 --- GPIO18
-    PAD6 --- GPIO19
-    PAD7 --- GPIO20
-    PAD8 --- GPIO21
-    PAD9 --- GPIO22
-    PAD10 --- GPIO23
-    PAD11 --- GPIO24
-    PAD12 --- GPIO25
+    PAD2 --- GND
+    PAD4 --- GPIO16
+    PAD5 --- GPIO17
+    PAD6 --- GPIO18
+    PAD7 --- GPIO19
+    PAD8 --- GPIO20
+    PAD9 --- GPIO21
+    PAD10 --- GPIO22
+    PAD11 --- GPIO23
+    PAD12 --- GPIO24
+    PAD13 --- GPIO25
 
     %% Klassdefinitioner
     classDef green fill:#8BC34A,stroke:#000,color:#000;
