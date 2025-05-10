@@ -46,6 +46,7 @@ graph LR
         PAD9[" "]
         PAD10[" "]
         PAD11[" "]
+        PAD12[" "]
     end
 
     subgraph R [ ]
@@ -64,7 +65,7 @@ graph LR
         GPIO25["GPIO 25"]
     end
 
-    %% align left-side GPIOs to Pico pads
+    %% Vänster kopplingar
     GPIO0 --- PAD0
     GPIO1 --- PAD1
     GPIO2 --- PAD2
@@ -78,18 +79,20 @@ graph LR
     GPIO10 --- PAD10
     GPIO11 --- PAD11
     GPIO12 --- PAD12
-    %% align right-side GPIOs to Pico pads (reuse PADs for spacing)
-    PAD1 --- GPIO13
-    PAD2 --- GPIO14
-    PAD3 --- GPIO15
-    PAD4 --- GPIO16
-    PAD5 --- GPIO17
-    PAD6 --- GPIO18
-    PAD7 --- GPIO19
-    PAD8 --- GPIO20
-    PAD9 --- GPIO21
-    PAD10 --- GPIO22
-    PAD11 --- GPIO23
+
+    %% Höger kopplingar
+    PAD0 --- GPIO13
+    PAD1 --- GPIO14
+    PAD2 --- GPIO15
+    PAD3 --- GPIO16
+    PAD4 --- GPIO17
+    PAD5 --- GPIO18
+    PAD6 --- GPIO19
+    PAD7 --- GPIO20
+    PAD8 --- GPIO21
+    PAD9 --- GPIO22
+    PAD10 --- GPIO23
     PAD11 --- GPIO24
-    PAD11 --- GPIO25
+    PAD12 --- GPIO25
+
 
