@@ -21,6 +21,7 @@ graph LR
     subgraph L [ ]
         GPIO0["GPIO 0"]
         GPIO1["GPIO 1"]
+        GND["GND"]
         GPIO2["GPIO 2 - GREEN"]:::green
         GPIO3["GPIO 3 - BLUE"]:::blue
         GPIO4["GPIO 4 - RED"]:::red
