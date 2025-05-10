@@ -59,8 +59,8 @@ graph LR
         VBUS["VBUS"]:::red 
         VSYS["VSYS"]:::red 
         GND2["GND"]
-        GPIO15["GPIO 15"]
-        GPIO16["GPIO 16"]
+        EN["EN"]
+        3V3["3V3"]:::red 
         GPIO17["GPIO 17"]
         GPIO18["GPIO 18"]
         GPIO19["GPIO 19"]
@@ -91,7 +91,8 @@ graph LR
     PAD0 --- VBUS
     PAD1 --- VSYS
     PAD2 --- GND2
-    PAD4 --- GPIO16
+    PAD3 --- EN
+    PAD4 --- 3V3
     PAD5 --- GPIO17
     PAD6 --- GPIO18
     PAD7 --- GPIO19
