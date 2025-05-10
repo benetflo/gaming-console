@@ -16,98 +16,47 @@
 
 # GPIO Pin Mapping
 ```mermaid
-graph LR
-    %% Vänstersida
-    subgraph L [ ]
-        GPIO0["GPIO 0"]
-        GPIO1["GPIO 1"]
-        GND["GND"]
-        GPIO2["GPIO 2 - GREEN"]:::green
-        GPIO3["GPIO 3 - BLUE"]:::blue
-        GPIO4["GPIO 4 - RED"]:::red
-        GPIO5["GPIO 5 - YELLOW"]:::yellow
-        GPIO6["GPIO 6"]
-        GPIO7["GPIO 7"]
-        GPIO8["GPIO 8"]
-        GPIO9["GPIO 9"]
-        GPIO10["GPIO 10"]
-        GPIO11["GPIO 11"]
-        GPIO12["GPIO 12"]
+graph TD;
+    subgraph Column 2
+        GPIO13("GPIO 13"):::textBlack
+        GPIO14("GPIO 14"):::textBlack
+        GPIO15("GPIO 15"):::textBlack
+        GPIO16("GPIO 16"):::textBlack
+        GPIO17("GPIO 17"):::textBlack
+        GPIO18("GPIO 18"):::textBlack
+        GPIO19("GPIO 19"):::textBlack
+        GPIO20("GPIO 20"):::textBlack
+        GPIO21("GPIO 21"):::textBlack
+        GPIO22("GPIO 22"):::textBlack
+        GPIO23("GPIO 23"):::textBlack
+        GPIO24("GPIO 24"):::textBlack
+        GPIO25("GPIO 25"):::textBlack
     end
 
-    %% Mittkolumn med USB och pads
-    subgraph M [Raspberry Pi Pico]
-        USB["Micro USB Port"]:::usb
-        PAD0["PAD0"]
-        PAD1["PAD1"]
-        GNDPAD1["GNDPAD1"]
-        PAD2["PAD2"]
-        PAD3["PAD3"]
-        PAD4["PAD4"]
-        PAD5["PAD5"]
-        PAD6["PAD6"]
-        PAD7["PAD7"]
-        PAD8["PAD8"]
-        PAD9["PAD9"]
-        PAD10["PAD10"]
-        PAD11["PAD11"]
-        PAD12["PAD12"]
+    subgraph Column 1
+        GPIO0("GPIO 0"):::textBlack
+        GPIO1("GPIO 1"):::textBlack
+        GPIO2("GPIO 2 - GREEN BUTTON"):::greenText
+        GPIO3("GPIO 3 - BLUE BUTTON"):::blueText
+        GPIO4("GPIO 4 - RED BUTTON"):::redText
+        GPIO5("GPIO 5 - YELLOW BUTTON"):::yellowText
+        GPIO6("GPIO 6"):::textBlack
+        GPIO7("GPIO 7"):::textBlack
+        GPIO8("GPIO 8"):::textBlack
+        GPIO9("GPIO 9"):::textBlack
+        GPIO10("GPIO 10"):::textBlack
+        GPIO11("GPIO 11"):::textBlack
+        GPIO12("GPIO 12"):::textBlack
     end
 
-    %% Högersida
-    subgraph R [ ]
-        GPIO13["GPIO 13"]
-        GPIO14["GPIO 14"]
-        GPIO15["GPIO 15"]
-        GPIO16["GPIO 16"]
-        GPIO17["GPIO 17"]
-        GPIO18["GPIO 18"]
-        GPIO19["GPIO 19"]
-        GPIO20["GPIO 20"]
-        GPIO21["GPIO 21"]
-        GPIO22["GPIO 22"]
-        GPIO23["GPIO 23"]
-        GPIO24["GPIO 24"]
-        GPIO25["GPIO 25"]
-    end
+    GPIO0-->GPIO1-->GPIO2-->GPIO3-->GPIO4-->GPIO5-->GPIO6-->GPIO7-->GPIO8-->GPIO9-->GPIO10-->GPIO11-->GPIO12
+    GPIO13-->GPIO14-->GPIO15-->GPIO16-->GPIO17-->GPIO18-->GPIO19-->GPIO20-->GPIO21-->GPIO22-->GPIO23-->GPIO24-->GPIO25
 
-    %% Kopplingar till mitten
-    GPIO0 --- PAD0
-    GPIO1 --- PAD1
-    GND --- GNDPAD1
-    GPIO2 --- PAD2
-    GPIO3 --- PAD3
-    GPIO4 --- PAD4
-    GPIO5 --- PAD5
-    GPIO6 --- PAD6
-    GPIO7 --- PAD7
-    GPIO8 --- PAD8
-    GPIO9 --- PAD9
-    GPIO10 --- PAD10
-    GPIO11 --- PAD11
-    GPIO12 --- PAD12
-
-    PAD0 --- GPIO13
-    PAD1 --- GPIO14
-    PAD2 --- GPIO15
-    PAD3 --- GPIO16
-    PAD4 --- GPIO17
-    PAD5 --- GPIO18
-    PAD6 --- GPIO19
-    PAD7 --- GPIO20
-    PAD8 --- GPIO21
-    PAD9 --- GPIO22
-    PAD10 --- GPIO23
-    PAD11 --- GPIO24
-    PAD12 --- GPIO25
-
-    %% Klassdefinitioner
-    classDef green fill:#8BC34A,stroke:#000,color:#000;
-    classDef blue fill:#2196F3,stroke:#000,color:#000;
-    classDef red fill:#F44336,stroke:#000,color:#000;
-    classDef yellow fill:#FFEB3B,stroke:#000,color:#000;
-    classDef usb fill:#B0BEC5,stroke:#000,color:#000;
-
+    classDef greenText fill:#00FF00, color:#000000;
+    classDef blueText fill:#0000FF, color:#000000;
+    classDef redText fill:#FF0000, color:#000000;
+    classDef yellowText fill:#FFFF00, color:#000000;
+    classDef textBlack color:#000000;
 
 
 
