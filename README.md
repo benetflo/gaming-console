@@ -21,7 +21,7 @@ graph LR
     subgraph L [ ]
         GPIO0["GPIO 0"]
         GPIO1["GPIO 1"]
-        GND["GND"]
+        GND1["GND"]
         GPIO2["GPIO 2 - GREEN"]:::green
         GPIO3["GPIO 3 - BLUE"]:::blue
         GPIO4["GPIO 4 - RED"]:::red
@@ -58,7 +58,7 @@ graph LR
     subgraph R [ ]
         GPIO13["GPIO 13"]
         GPIO14["GPIO 14"]
-        GND["GND"]
+        GND2["GND"]
         GPIO15["GPIO 15"]
         GPIO16["GPIO 16"]
         GPIO17["GPIO 17"]
@@ -75,7 +75,7 @@ graph LR
     %% Kopplingar till mitten
     GPIO0 --- PAD0
     GPIO1 --- PAD1
-    GND --- PAD 2
+    GND1 --- PAD 2
     GPIO2 --- PAD3
     GPIO3 --- PAD4
     GPIO4 --- PAD5
@@ -90,7 +90,7 @@ graph LR
 
     PAD0 --- GPIO13
     PAD1 --- GPIO14
-    PAD2 --- GND
+    PAD2 --- GND2
     PAD4 --- GPIO16
     PAD5 --- GPIO17
     PAD6 --- GPIO18
