@@ -17,14 +17,14 @@
 # GPIO Pin Mapping
 ```mermaid
 graph LR
-    %% Vänstersida
+    %% Vänstersida (GPIOs och knappar)
     subgraph L [ ]
         GPIO0["GPIO 0"]
         GPIO1["GPIO 1"]
-        GPIO2["GPIO 2 - GREEN BUTTON"]:::green
-        GPIO3["GPIO 3 - BLUE BUTTON"]:::blue
-        GPIO4["GPIO 4 - RED BUTTON"]:::red
-        GPIO5["GPIO 5 - YELLOW BUTTON"]:::yellow
+        GPIO2["GPIO 2 - GREEN"]:::green
+        GPIO3["GPIO 3 - BLUE"]:::blue
+        GPIO4["GPIO 4 - RED"]:::red
+        GPIO5["GPIO 5 - YELLOW"]:::yellow
         GPIO6["GPIO 6"]
         GPIO7["GPIO 7"]
         GPIO8["GPIO 8"]
@@ -34,9 +34,12 @@ graph LR
         GPIO12["GPIO 12"]
     end
 
-    %% Mittkolumn med USB och pads
+    %% Mittkolumn med USB, GND, 3V3, och pads
     subgraph M [Raspberry Pi Pico]
         USB["Micro USB Port"]:::usb
+        GND["GND"]:::gnd
+        VBUS["VBUS"]:::vbus
+        V3_3["3V3"]:::v33
         PAD0[" "]
         PAD1[" "]
         PAD2[" "]
@@ -52,7 +55,7 @@ graph LR
         PAD12[" "]
     end
 
-    %% Högersida
+    %% Högersida (GPIOs och tillägg)
     subgraph R [ ]
         GPIO13["GPIO 13"]
         GPIO14["GPIO 14"]
@@ -104,6 +107,10 @@ graph LR
     classDef red fill:#F44336,stroke:#000,color:#000;
     classDef yellow fill:#FFEB3B,stroke:#000,color:#000;
     classDef usb fill:#B0BEC5,stroke:#000,color:#000;
+    classDef gnd fill:#212121,stroke:#000,color:#fff;
+    classDef vbus fill:#FF5722,stroke:#000,color:#fff;
+    classDef v33 fill:#4CAF50,stroke:#000,color:#fff;
+
 
 
 
