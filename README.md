@@ -52,9 +52,10 @@ graph TD;
     GPIO0-->GPIO1-->GPIO2-->GPIO3-->GPIO4-->GPIO5-->GPIO6-->GPIO7-->GPIO8-->GPIO9-->GPIO10-->GPIO11
     GPIO12-->GPIO13-->GPIO14-->GPIO15-->GPIO16-->GPIO17-->GPIO18-->GPIO19-->GPIO20-->GPIO21-->GPIO22-->GPIO23-->GPIO24-->GPIO25
 
-    classDef green fill:#00FF00;
-    classDef blue fill:#0000FF;
-    classDef red fill:#FF0000;
-    classDef yellow fill:#FFFF00;
+    classDef green fill:#00FF00, color:#000000;
+    classDef blue fill:#0000FF, color:#000000;
+    classDef red fill:#FF0000, color:#000000;
+    classDef yellow fill:#FFFF00, color:#000000;
     classDef textBlack color:#000000;
+
 
