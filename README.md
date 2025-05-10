@@ -109,7 +109,7 @@ graph LR
     classDef red fill:#F44336,stroke:#000,color:#000;
     classDef yellow fill:#FFEB3B,stroke:#000,color:#000;
     classDef usb fill:#B0BEC5,stroke:#000,color:#000;
-    classDef pink fill:#E91E63,stroke:#000,color:#FFF;
+    classDef pink fill:#F48FB1,stroke:#000,color:#FFF;
 
 
 
