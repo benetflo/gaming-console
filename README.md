@@ -14,25 +14,9 @@
 - ?x Leds
 - 1x Waveshare 1.83 inch LCD module
 
-
+# GPIO Pin Mapping
 ```mermaid
 graph TD;
-    subgraph Column 1
-        GPIO0("GPIO 0"):::textBlack
-        GPIO1("GPIO 1"):::textBlack
-        GPIO2("GPIO 2 - GREEN BUTTON"):::greenText
-        GPIO3("GPIO 3 - BLUE BUTTON"):::blueText
-        GPIO4("GPIO 4 - RED BUTTON"):::redText
-        GPIO5("GPIO 5 - YELLOW BUTTON"):::yellowText
-        GPIO6("GPIO 6"):::textBlack
-        GPIO7("GPIO 7"):::textBlack
-        GPIO8("GPIO 8"):::textBlack
-        GPIO9("GPIO 9"):::textBlack
-        GPIO10("GPIO 10"):::textBlack
-        GPIO11("GPIO 11"):::textBlack
-        GPIO12("GPIO 12"):::textBlack
-    end
-
     subgraph Column 2
         GPIO13("GPIO 13"):::textBlack
         GPIO14("GPIO 14"):::textBlack
@@ -47,6 +31,22 @@ graph TD;
         GPIO23("GPIO 23"):::textBlack
         GPIO24("GPIO 24"):::textBlack
         GPIO25("GPIO 25"):::textBlack
+    end
+
+    subgraph Column 1
+        GPIO0("GPIO 0"):::textBlack
+        GPIO1("GPIO 1"):::textBlack
+        GPIO2("GPIO 2 - GREEN BUTTON"):::greenText
+        GPIO3("GPIO 3 - BLUE BUTTON"):::blueText
+        GPIO4("GPIO 4 - RED BUTTON"):::redText
+        GPIO5("GPIO 5 - YELLOW BUTTON"):::yellowText
+        GPIO6("GPIO 6"):::textBlack
+        GPIO7("GPIO 7"):::textBlack
+        GPIO8("GPIO 8"):::textBlack
+        GPIO9("GPIO 9"):::textBlack
+        GPIO10("GPIO 10"):::textBlack
+        GPIO11("GPIO 11"):::textBlack
+        GPIO12("GPIO 12"):::textBlack
     end
 
     GPIO0-->GPIO1-->GPIO2-->GPIO3-->GPIO4-->GPIO5-->GPIO6-->GPIO7-->GPIO8-->GPIO9-->GPIO10-->GPIO11-->GPIO12
