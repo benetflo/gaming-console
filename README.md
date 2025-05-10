@@ -30,6 +30,7 @@ graph LR
         GPIO9["GPIO 9"]
         GPIO10["GPIO 10"]
         GPIO11["GPIO 11"]
+        GPIO12["GPIO 12"]
     end
 
     subgraph M [Raspberry Pi Pico]
@@ -48,7 +49,6 @@ graph LR
     end
 
     subgraph R [ ]
-        GPIO12["GPIO 12"]
         GPIO13["GPIO 13"]
         GPIO14["GPIO 14"]
         GPIO15["GPIO 15"]
@@ -77,9 +77,8 @@ graph LR
     GPIO9 --- PAD9
     GPIO10 --- PAD10
     GPIO11 --- PAD11
-
+    GPIO12 --- PAD12
     %% align right-side GPIOs to Pico pads (reuse PADs for spacing)
-    PAD0 --- GPIO12
     PAD1 --- GPIO13
     PAD2 --- GPIO14
     PAD3 --- GPIO15
