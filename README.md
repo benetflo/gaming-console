@@ -61,7 +61,7 @@ graph LR
         GND2["GND"]
         EN["EN"]:::pink 
         3V3["3V3"]:::red 
-        ADC_VREF["ADC_VREF"]
+        ADC_VREF["ADC_VREF"]:::darkgreen
         GPIO28["GPIO 28"]:::green 
         GND3["GND"]
         GPIO27["GPIO 27"]:::green 
@@ -110,6 +110,7 @@ graph LR
     classDef yellow fill:#FFEB3B,stroke:#000,color:#000;
     classDef usb fill:#B0BEC5,stroke:#000,color:#000;
     classDef pink fill:#F48FB1,stroke:#000,color:#FFF;
+    classDef darkgreen fill:#388E3C,stroke:#000,color:#FFF;
 
 
 
