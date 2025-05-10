@@ -14,7 +14,7 @@
 - ?x Leds
 - 1x Waveshare 1.83 inch LCD module
 
-<div style="background-color: #f0f0f0; padding: 20px;">
+
 ```mermaid
 graph TD;
     subgraph Column 1
@@ -57,5 +57,5 @@ graph TD;
     classDef redText fill:#FF0000, color:#000000;
     classDef yellowText fill:#FFFF00, color:#000000;
     classDef textBlack color:#000000;
-</div>
+
 
