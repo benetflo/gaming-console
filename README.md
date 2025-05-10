@@ -19,8 +19,8 @@
 graph LR
     %% Vänstersida
     subgraph L [ ]
-        GPIO0["GPIO 0"]
-        GPIO1["GPIO 1"]
+        GPIO0["GPIO 0"]:::green 
+        GPIO1["GPIO 1"]:::green 
         GND1["GND"]
         GPIO2["GPIO 2 - GREEN BUTTON"]:::green
         GPIO3["GPIO 3 - BLUE BUTTON"]:::green 
