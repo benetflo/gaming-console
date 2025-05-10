@@ -14,6 +14,10 @@
 - ?x Leds
 - 1x Waveshare 1.83 inch LCD module
 
+## Sound
+- 1x DFPlayer Mini Mp3 Player
+- 1x Micro SD card
+
 # GPIO Pin Mapping
 ```mermaid
 graph LR
