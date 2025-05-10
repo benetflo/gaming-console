@@ -17,7 +17,7 @@
 # GPIO Pin Mapping
 ```mermaid
 graph LR
-    %% Vänstersida (GPIOs och knappar)
+    %% Vänstersida
     subgraph L [ ]
         GPIO0["GPIO 0"]
         GPIO1["GPIO 1"]
@@ -34,14 +34,12 @@ graph LR
         GPIO12["GPIO 12"]
     end
 
-    %% Mittkolumn med USB, GND, 3V3, och pads
+    %% Mittkolumn med USB och pads
     subgraph M [Raspberry Pi Pico]
         USB["Micro USB Port"]:::usb
-        GND["GND"]:::gnd
-        VBUS["VBUS"]:::vbus
-        V3_3["3V3"]:::v33
         PAD0[" "]
         PAD1[" "]
+        GNDPAD1 [" "]
         PAD2[" "]
         PAD3[" "]
         PAD4[" "]
@@ -55,7 +53,7 @@ graph LR
         PAD12[" "]
     end
 
-    %% Högersida (GPIOs och tillägg)
+    %% Högersida
     subgraph R [ ]
         GPIO13["GPIO 13"]
         GPIO14["GPIO 14"]
@@ -75,6 +73,7 @@ graph LR
     %% Kopplingar till mitten
     GPIO0 --- PAD0
     GPIO1 --- PAD1
+    GND --- GNDPAD1
     GPIO2 --- PAD2
     GPIO3 --- PAD3
     GPIO4 --- PAD4
@@ -107,9 +106,7 @@ graph LR
     classDef red fill:#F44336,stroke:#000,color:#000;
     classDef yellow fill:#FFEB3B,stroke:#000,color:#000;
     classDef usb fill:#B0BEC5,stroke:#000,color:#000;
-    classDef gnd fill:#212121,stroke:#000,color:#fff;
-    classDef vbus fill:#FF5722,stroke:#000,color:#fff;
-    classDef v33 fill:#4CAF50,stroke:#000,color:#fff;
+
 
 
 
