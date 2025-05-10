@@ -21,10 +21,10 @@ graph LR
     subgraph L [ ]
         GPIO0["GPIO 0"]
         GPIO1["GPIO 1"]
-        GPIO2["GPIO 2 - GREEN"]:::green
-        GPIO3["GPIO 3 - BLUE"]:::blue
-        GPIO4["GPIO 4 - RED"]:::red
-        GPIO5["GPIO 5 - YELLOW"]:::yellow
+        GPIO2["GPIO 2 - GREEN BUTTON"]:::green
+        GPIO3["GPIO 3 - BLUE BUTTON"]:::blue
+        GPIO4["GPIO 4 - RED BUTTON"]:::red
+        GPIO5["GPIO 5 - YELLOW BUTTON"]:::yellow
         GPIO6["GPIO 6"]
         GPIO7["GPIO 7"]
         GPIO8["GPIO 8"]
