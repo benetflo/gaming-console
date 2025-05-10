@@ -75,7 +75,7 @@ graph LR
     %% Kopplingar till mitten
     GPIO0 --- PAD0
     GPIO1 --- PAD1
-    GND1 --- PAD 2
+    GND1 --- PAD2
     GPIO2 --- PAD3
     GPIO3 --- PAD4
     GPIO4 --- PAD5
