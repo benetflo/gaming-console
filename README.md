@@ -56,8 +56,8 @@ graph LR
 
     %% Högersida
     subgraph R [ ]
-        GPIO13["GPIO 13"]
-        GPIO14["GPIO 14"]
+        VBUS["VBUS"]:::red 
+        VSYS["VSYS"]:::red 
         GND2["GND"]
         GPIO15["GPIO 15"]
         GPIO16["GPIO 16"]
@@ -88,8 +88,8 @@ graph LR
     GPIO11 --- PAD12
     GPIO12 --- PAD13
 
-    PAD0 --- GPIO13
-    PAD1 --- GPIO14
+    PAD0 --- VBUS
+    PAD1 --- VSYS
     PAD2 --- GND2
     PAD4 --- GPIO16
     PAD5 --- GPIO17
