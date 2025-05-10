@@ -17,13 +17,14 @@
 # GPIO Pin Mapping
 ```mermaid
 graph LR
+    %% Vänstersida
     subgraph L [ ]
         GPIO0["GPIO 0"]
         GPIO1["GPIO 1"]
-        GPIO2["GPIO 2 - GREEN"]
-        GPIO3["GPIO 3 - BLUE"]
-        GPIO4["GPIO 4 - RED"]
-        GPIO5["GPIO 5 - YELLOW"]
+        GPIO2["GPIO 2 - GREEN"]:::green
+        GPIO3["GPIO 3 - BLUE"]:::blue
+        GPIO4["GPIO 4 - RED"]:::red
+        GPIO5["GPIO 5 - YELLOW"]:::yellow
         GPIO6["GPIO 6"]
         GPIO7["GPIO 7"]
         GPIO8["GPIO 8"]
@@ -33,8 +34,9 @@ graph LR
         GPIO12["GPIO 12"]
     end
 
+    %% Mittkolumn med USB och pads
     subgraph M [Raspberry Pi Pico]
-        USB["Micro USB Port"]
+        USB["Micro USB Port"]:::usb
         PAD0[" "]
         PAD1[" "]
         PAD2[" "]
@@ -50,6 +52,7 @@ graph LR
         PAD12[" "]
     end
 
+    %% Högersida
     subgraph R [ ]
         GPIO13["GPIO 13"]
         GPIO14["GPIO 14"]
@@ -66,7 +69,7 @@ graph LR
         GPIO25["GPIO 25"]
     end
 
-    %% Vänster kopplingar
+    %% Kopplingar till mitten
     GPIO0 --- PAD0
     GPIO1 --- PAD1
     GPIO2 --- PAD2
@@ -81,7 +84,6 @@ graph LR
     GPIO11 --- PAD11
     GPIO12 --- PAD12
 
-    %% Höger kopplingar
     PAD0 --- GPIO13
     PAD1 --- GPIO14
     PAD2 --- GPIO15
@@ -95,5 +97,13 @@ graph LR
     PAD10 --- GPIO23
     PAD11 --- GPIO24
     PAD12 --- GPIO25
+
+    %% Klassdefinitioner
+    classDef green fill:#8BC34A,stroke:#000,color:#000;
+    classDef blue fill:#2196F3,stroke:#000,color:#000;
+    classDef red fill:#F44336,stroke:#000,color:#000;
+    classDef yellow fill:#FFEB3B,stroke:#000,color:#000;
+    classDef usb fill:#B0BEC5,stroke:#000,color:#000;
+
 
 
