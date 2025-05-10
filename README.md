@@ -34,6 +34,7 @@ graph LR
     end
 
     subgraph M [Raspberry Pi Pico]
+        USB["Micro USB Port"]
         PAD0[" "]
         PAD1[" "]
         PAD2[" "]
