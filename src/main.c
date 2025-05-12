@@ -2,14 +2,17 @@
 #include "irq_handler.h"
 #include "hw_init.h"
 #include "joystick.h"
+#include "mp3_module.h"
 
-// pico sdk, stdlib
+// pico sdk, stdlib, external
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include <stdbool.h>
 #include "hardware/adc.h"
 #include "stdio.h"
 
+#define UART_TX_PIN 0
+#define UART_RX_PIN 1
 #define GREEN_BTN 2
 #define BLUE_BTN 3
 #define RED_BTN 4
@@ -44,6 +47,11 @@ int main(){
 	activate_irq_btn(YELLOW_BTN);
 
 	init_adc_joystick(VRX, VRY);
+
+	init_mp3_module(UART_TX_PIN, UART_RX_PIN);
+
+	play_track(1);
+
 	// MAIN LOOP
 	while(1){
 		printf("X: %u | Y: %u\n", joystick_x, joystick_y);

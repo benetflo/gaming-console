@@ -3,6 +3,7 @@ add_executable(${PROJECT_NAME}
 	irq_handler.c
 	hw_init.c
 	joystick.c
+	mp3_module.c
 )
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1)
@@ -17,6 +18,7 @@ target_link_libraries(${PROJECT_NAME}
 	hardware_gpio
 	hardware_adc
 	hardware_irq
+	hardware_uart
 	pico_time
 )
 
