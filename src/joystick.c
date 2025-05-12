@@ -2,29 +2,40 @@
 #include "pico/stdlib.h"
 #include "hardware/irq.h"
 #include "joystick.h"
+#include <stdlib.h>
+
+#define DEAD_ZONE 50
 
 bool adc_is_initialized = false;
 extern volatile uint16_t joystick_x;
 extern volatile uint16_t joystick_y;
 volatile bool reading_x = true;
 
+uint16_t last_x = 0;
+uint16_t last_y = 0;
 uint16_t x_adc_input = 0;
 uint16_t y_adc_input = 0;
 
 void adc_isr(){
-
 	uint16_t value = adc_fifo_get();
 
 	if(reading_x){
-		joystick_x = value;
-	}else{
-		joystick_y = value;
-	}
-	reading_x = !reading_x;
+		uint16_t diff = (value > last_x) ? (value - last_x) : (last_x - value);
+		if(diff > DEAD_ZONE) {
+			joystick_x = value;
+			last_x = value;
+		}
+	} else {
+        	uint16_t diff = (value > last_y) ? (value - last_y) : (last_y - value);
+		if(diff > DEAD_ZONE) {
+			joystick_y = value;
+			last_y = value;
+		}
+}
 
+	reading_x = !reading_x;
 	uint16_t next_input = reading_x ? x_adc_input : y_adc_input;
 	adc_select_input(next_input);
-
 	adc_run(true);
 }
 

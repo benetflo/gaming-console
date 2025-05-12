@@ -55,7 +55,12 @@ int main(){
 	// MAIN LOOP
 	while(1){
 		printf("X: %u | Y: %u\n", joystick_x, joystick_y);
-		sleep_ms(100);
+		sleep_ms(4000);
+		change_volume(10);
+		sleep_ms(4000);
+		change_volume(20);
+		sleep_ms(4000);
+		change_volume(30);
 	}
 	return 0;
 }

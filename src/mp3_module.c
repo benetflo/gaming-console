@@ -54,3 +54,10 @@ void stop_playback(void) {
         send_command(0x0E, 0x00, 0x00);
 }
 
+void change_volume(uint8_t volume_level){
+	if (volume_level > 30){
+		volume_level = 30;
+	}
+	send_command(0x06, 0x00, volume_level);
+
+}
