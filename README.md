@@ -12,11 +12,12 @@
 
 ## Visuals
 - ?x Leds
-- 1x Waveshare 1.83 inch LCD module
+- 1x **Waveshare 1.83 inch LCD module**
 
 ## Sound
-- 1x DFPlayer Mini Mp3 Player
-- 1x Micro SD card
+- 1x **DFPlayer Mini Mp3 Player**
+- 1x **Micro SD card**
+- 1x 3W speaker
 
 # GPIO Pin Mapping
 ```mermaid
