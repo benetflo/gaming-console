@@ -88,9 +88,9 @@ graph LR
         RUN["RUN"]:::pink 
         GPIO22["GPIO 22 - THUMBSTICK SW"]:::green 
         GND4["GND"]
-        GPIO21["GPIO 21"]:::green
-        GPIO20["GPIO 20"]:::green 
-        GPIO19["GPIO 19"]:::green 
+        GPIO21["GPIO 21 - ROTARY CLK"]:::green
+        GPIO20["GPIO 20 - ROTARY DT"]:::green 
+        GPIO19["GPIO 19 - ROTARY SW"]:::green 
         GPIO18["GPIO 18"]:::green 
         GND8["GND"]
         GPIO17["GPIO 17"]:::green 
