@@ -86,7 +86,7 @@ graph LR
         GPIO27["GPIO 27 - THUMBSTICK VRY"]:::green 
         GPIO26["GPIO 26 - THUMBSTICK VRX"]:::green 
         RUN["RUN"]:::pink 
-        GPIO22["GPIO 22"]:::green 
+        GPIO22["GPIO 22 - THUMBSTICK SW"]:::green 
         GND4["GND"]
         GPIO21["GPIO 21"]:::green
         GPIO20["GPIO 20"]:::green 
