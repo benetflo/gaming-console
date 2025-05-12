@@ -18,7 +18,7 @@
 ## Sound
 - 1x **DFPlayer Mini Mp3 Player**
 - 1x **Micro SD card**
-- 1x 3W speaker
+- 1x **3W speaker**
 
 # GPIO Pin Mapping
 ```mermaid
