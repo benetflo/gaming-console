@@ -9,6 +9,7 @@
 - 1x **Red Button**
 - 1x **Yellow Button**
 - 1x **Thumbstick**
+- 1x **Rotary Encoder**
 
 ## Visuals
 - ?x Leds
