@@ -58,6 +58,10 @@ void change_volume(uint8_t volume_level){
 	if (volume_level > 30){
 		volume_level = 30;
 	}
+
+	if(volume_level < 0){
+		volume_level = 0;
+	}
 	send_command(0x06, 0x00, volume_level);
 
 }

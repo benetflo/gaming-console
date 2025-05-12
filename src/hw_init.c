@@ -14,4 +14,7 @@ void init_gpio_OUT(uint gpio_pin){
 	gpio_set_dir(gpio_pin, GPIO_OUT);
 }
 
-
+void init_gpio_IN(uint gpio_pin){
+	gpio_init(gpio_pin);
+	gpio_set_dir(gpio_pin, GPIO_IN);
+}

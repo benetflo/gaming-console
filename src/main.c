@@ -21,14 +21,24 @@
 #define VRY 27 // adc 1
 #define SW 15 // doublecheck that 15 does not collide with lcd screen
 
+#define ROTARY_CLK 16
+#define ROTARY_DATA 17
+#define ROTARY_SW 18
+
 #define LED 0
 
 volatile bool green_btn_is_pressed = false;
 volatile bool blue_btn_is_pressed = false;
 volatile bool red_btn_is_pressed = false;
 volatile bool yellow_btn_is_pressed = false;
+
+volatile bool rotary_switch_is_pressed = false;
+volatile int encoder_position = 0;
+
 volatile uint16_t joystick_x = 0;
 volatile uint16_t joystick_y = 0;
+
+//
 
 int main(){
 
@@ -41,26 +51,27 @@ int main(){
 	init_gpio_IN_PULL_UP(YELLOW_BTN);
 	init_gpio_OUT(LED);
 
-	activate_irq_btn(GREEN_BTN);
-	activate_irq_btn(BLUE_BTN);
-	activate_irq_btn(RED_BTN);
-	activate_irq_btn(YELLOW_BTN);
+	init_gpio_IN_PULL_UP(ROTARY_SW);
+	init_gpio_IN_PULL_UP(ROTARY_CLK);
+	init_gpio_IN_PULL_UP(ROTARY_DATA);
+
+	activate_irq_btn_rotary(GREEN_BTN);
+	activate_irq_btn_rotary(BLUE_BTN);
+	activate_irq_btn_rotary(RED_BTN);
+	activate_irq_btn_rotary(YELLOW_BTN);
+
+	activate_irq_btn_rotary(ROTARY_SW);
+	activate_irq_btn_rotary(ROTARY_CLK);
 
 	init_adc_joystick(VRX, VRY);
 
 	init_mp3_module(UART_TX_PIN, UART_RX_PIN);
 
 	play_track(1);
-
 	// MAIN LOOP
 	while(1){
-		printf("X: %u | Y: %u\n", joystick_x, joystick_y);
-		sleep_ms(4000);
-		change_volume(10);
-		sleep_ms(4000);
-		change_volume(20);
-		sleep_ms(4000);
-		change_volume(30);
+		change_volume(encoder_position);
+		sleep_ms(50);
 	}
 	return 0;
 }
