@@ -25,8 +25,8 @@
 graph LR
     %% Vänstersida
     subgraph L [ ]
-        GPIO0["MP3 PLAYER RX"]:::green 
-        GPIO1["MP3 PLAYER TX"]:::green 
+        GPIO0["GPIO 0 - MP3 PLAYER RX"]:::green 
+        GPIO1["GPIO 1 - MP3 PLAYER TX"]:::green 
         GND1["GND"]
         GPIO2["GPIO 2 - GREEN BUTTON"]:::green
         GPIO3["GPIO 3 - BLUE BUTTON"]:::green 
