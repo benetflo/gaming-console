@@ -83,8 +83,8 @@ graph LR
         ADC_VREF["ADC_VREF"]:::darkgreen
         GPIO28["GPIO 28"]:::green 
         GND3["GND"]
-        GPIO27["GPIO 27"]:::green 
-        GPIO26["GPIO 26"]:::green 
+        GPIO27["GPIO 27 - THUMBSTICK VRY"]:::green 
+        GPIO26["GPIO 26 - THUMBSTICK VRX"]:::green 
         RUN["RUN"]:::pink 
         GPIO22["GPIO 22"]:::green 
         GND4["GND"]
