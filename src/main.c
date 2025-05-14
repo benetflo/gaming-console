@@ -20,13 +20,11 @@
 #define YELLOW_BTN 5
 #define VRX 26 // adc 0
 #define VRY 27 // adc 1
-#define SW 15 // doublecheck that 15 does not collide with lcd screen
+#define SW 22 // doublecheck that 15 does not collide with lcd screen
 
-#define ROTARY_CLK 16
-#define ROTARY_DATA 17
-#define ROTARY_SW 18
-
-#define LED 0
+#define ROTARY_CLK 21
+#define ROTARY_DATA 20
+#define ROTARY_SW 19
 
 volatile bool green_btn_is_pressed = false;
 volatile bool blue_btn_is_pressed = false;
@@ -50,7 +48,6 @@ int main(){
 	init_gpio_IN_PULL_UP(BLUE_BTN);
 	init_gpio_IN_PULL_UP(RED_BTN);
 	init_gpio_IN_PULL_UP(YELLOW_BTN);
-	init_gpio_OUT(LED);
 
 	init_gpio_IN_PULL_UP(ROTARY_SW);
 	init_gpio_IN_PULL_UP(ROTARY_CLK);
