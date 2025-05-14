@@ -10,6 +10,7 @@
 #include <stdbool.h>
 #include "hardware/adc.h"
 #include "stdio.h"
+#include "LCD_Test.h" // test
 
 #define UART_TX_PIN 0
 #define UART_RX_PIN 1
@@ -70,8 +71,9 @@ int main(){
 	play_track(1);
 	// MAIN LOOP
 	while(1){
-		change_volume(encoder_position);
+		LCD_1in83_test();
 		sleep_ms(50);
 	}
 	return 0;
 }
+
