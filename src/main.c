@@ -10,7 +10,7 @@
 #include <stdbool.h>
 #include "hardware/adc.h"
 #include "stdio.h"
-#include "LCD_Test.h" // test
+#include "led_test.h" // test
 
 #define UART_TX_PIN 0
 #define UART_RX_PIN 1
@@ -71,7 +71,7 @@ int main(){
 	play_track(1);
 	// MAIN LOOP
 	while(1){
-		LCD_1in83_test();
+		led_test_B();
 		sleep_ms(50);
 	}
 	return 0;
