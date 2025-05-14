@@ -35,13 +35,13 @@ graph LR
         GND5["GND"]
         GPIO6["GPIO 6"]:::green 
         GPIO7["GPIO 7"]:::green 
-        GPIO8["GPIO 8"]:::green 
-        GPIO9["GPIO 9"]:::green 
+        GPIO8["GPIO 8 - LCD DC"]:::green 
+        GPIO9["GPIO 9 - LCD CS"]:::green 
         GND6["GND"]
-        GPIO10["GPIO 10"]:::green
-        GPIO11["GPIO 11"]:::green 
-        GPIO12["GPIO 12"]:::green 
-        GPIO13["GPIO 13"]:::green
+        GPIO10["GPIO 10 - LCD CLK"]:::green
+        GPIO11["GPIO 11 - LCD DIN"]:::green 
+        GPIO12["GPIO 12 - LCD RST"]:::green 
+        GPIO13["GPIO 13 - LCD BL"]:::green
         GND7[GND]
         GPIO14["GPIO 14"]:::green
         GPIO15["GPIO 15"]:::green 
